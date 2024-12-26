@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Error Handling try and catch</title>
+    </head>
+    <body>
+        <h1> Error Handling</h1>
+        <p id="hello"> </p>
+        <p id="search"> </p>
+        <p id="replace"> </p>
+        <p id="conversions"> </p>
+        <script>
+            x="i like trains,cars,planes and pizza :]";
+            z=x.search("cars");
+            document.getElementById("search").innerHTML=z
+            w=x.replace("planes","bikes");
+            document.getElementById("replace").innerHTML=w
+
+            try {
+
+    addalert("Welcome guest!");
+
+    }
+
+    catch(err) {
+
+    document.getElementById("hello").innerHTML=err.message;
+
+        }
+        </script>
+    </body>
+</html>
